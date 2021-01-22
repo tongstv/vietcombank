@@ -16,7 +16,6 @@ use Facebook\WebDriver\Firefox\FirefoxDriver;
 
 // Chrome
 require_once('vendor/autoload.php');
-require_once __DIR__ . '/wefinex.class.php';
 
 
 include '2Captcha.php';
