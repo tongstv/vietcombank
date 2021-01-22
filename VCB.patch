@@ -1,0 +1,15 @@
+Index: Dockerfile
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Dockerfile	(date 1611337026211)
++++ Dockerfile	(date 1611337026211)
+@@ -0,0 +1,6 @@
++FROM php:7.3-cli
++RUN pecl install curl json \
++    && docker-php-ext-enable curl json
++ADD / .
++WORKDIR /
++CMD [ "php", "./index.php" ]
+\ No newline at end of file
